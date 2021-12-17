@@ -18,11 +18,19 @@
 
 
 /* Inizio menù in side a sinistra */
+.top-bar{
+    width: 20%;
+    height: 100px;
+    background-color: coral;
+    position: fixed;
+    top: 0;
+}
 .side-bar{
     min-width: 20%;
     height: calc(100vh - 200px);
     background-color: #327fa8;
     position: fixed;
+    top: 100px;
     overflow-y: scroll;
 }
 .bottom-side{
