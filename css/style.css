@@ -20,14 +20,14 @@
 
 /* Inizio menù in side a sinistra */
 .side-bar{
-    width: 200px;
+    min-width: 20%;
     height: calc(100vh - 200px);
     background-color: #327fa8;
     position: fixed;
     overflow-y: scroll;
 }
 .bottom-side{
-    width: 200px;
+    width: 20%;
     height: 100px;
     background-color: coral;
     position: fixed;
@@ -39,8 +39,7 @@
 
 /* Inizio Header */
 header{
-    height: 100px;
-    margin-left: 200px;
+    height: 100px;  
     background-color: gray;
 }
 /* Fine header */
@@ -50,7 +49,6 @@ header{
 /* Inizio main */
 main{
     height: calc(100vh - 100px);
-    margin-left: 200px;
     background-color: lightgrey;
     overflow-y: scroll;
 }
