@@ -26,7 +26,7 @@
     top: 0;
 }
 .side-bar{
-    min-width: 20%;
+    width: 20%;
     height: calc(100vh - 200px);
     background-color: #327fa8;
     position: fixed;
@@ -46,7 +46,7 @@
 
 /* Inizio Header */
 header{
-    width: auto;
+    width: calc(100vw - 20%);
     height: 100px;  
     background-color: gray;
     margin-left: 20%;
@@ -57,7 +57,7 @@ header{
 
 /* Inizio main */
 main{
-    width: auto;
+    width: calc(100vw - 20%);
     height: calc(100vh - 100px);
     background-color: lightgrey;
     overflow-y: scroll;
