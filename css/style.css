@@ -1,4 +1,4 @@
-/* regole generali */
+/* Inizio regole generali */
 *{
     margin: 0;
     padding: 0;
@@ -13,26 +13,11 @@
 .direzione-riga{
     flex-direction: row;
 }
+/* Fine regole generali */
 
-header{
-    height: 100px;
-    margin-left: 200px;
-    background-color: gray;
-}
-main{
-    height: calc(100vh - 100px);
-    margin-left: 200px;
-    background-color: lightgrey;
-    overflow-y: scroll;
-}
-footer{
-    position: fixed;
-    height: 100px;
-    width: 100%;
-    bottom: 0;
-    background-color: crimson;
-    z-index: 9999;
-}
+
+
+/* Inizio menù in side a sinistra */
 .side-bar{
     width: 200px;
     height: calc(100vh - 200px);
@@ -47,3 +32,38 @@ footer{
     position: fixed;
     bottom: 100px;
 }
+/* Fine menù in side a sinistra */
+
+
+
+/* Inizio Header */
+header{
+    height: 100px;
+    margin-left: 200px;
+    background-color: gray;
+}
+/* Fine header */
+
+
+
+/* Inizio main */
+main{
+    height: calc(100vh - 100px);
+    margin-left: 200px;
+    background-color: lightgrey;
+    overflow-y: scroll;
+}
+/* Fine main */
+
+
+
+/* Inizio footer */
+footer{
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    bottom: 0;
+    background-color: crimson;
+    z-index: 9999;
+}
+/* Fine footer */
