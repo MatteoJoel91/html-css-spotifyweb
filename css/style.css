@@ -1,5 +1,44 @@
+/* regole generali */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+.flex{
+    display: flex;
+}
+.direzione-colonna{
+    flex-direction: column;
+}
+.direzione-riga{
+    flex-direction: row;
+}
+
+header{
+    height: 100px;
+    margin-left: 200px;
+    background-color: gray;
+}
+main{
+    height: calc(100vh - 100px);
+    margin-left: 200px;
+    background-color: lightgrey;
+    overflow-y: scroll;
+}
+footer{
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    bottom: 0;
+    background-color: crimson;
+    z-index: 9999;
+}
+.side-bar{
+    width: 200px;
+    height: calc(100vh - 100px);
+    background-color: #f1f1f1;
+    position: fixed;
+    overflow: auto;
+    position: fixed;
+    overflow-y: scroll;
 }
