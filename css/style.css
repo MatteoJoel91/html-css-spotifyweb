@@ -35,10 +35,15 @@ footer{
 }
 .side-bar{
     width: 200px;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 200px);
     background-color: #f1f1f1;
     position: fixed;
-    overflow: auto;
-    position: fixed;
     overflow-y: scroll;
+}
+.bottom-side{
+    width: 200px;
+    height: 100px;
+    background-color: coral;
+    position: fixed;
+    bottom: 100px;
 }
