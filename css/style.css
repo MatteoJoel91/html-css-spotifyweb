@@ -39,8 +39,10 @@
 
 /* Inizio Header */
 header{
+    width: auto;
     height: 100px;  
     background-color: gray;
+    margin-left: 20%;
 }
 /* Fine header */
 
@@ -48,9 +50,11 @@ header{
 
 /* Inizio main */
 main{
+    width: auto;
     height: calc(100vh - 100px);
     background-color: lightgrey;
     overflow-y: scroll;
+    margin-left: 20%;
 }
 /* Fine main */
 
