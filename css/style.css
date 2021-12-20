@@ -18,7 +18,6 @@ body{
 .direzione-riga{
     flex-direction: row;
 }
-
 /* Fine regole generali */
 
 
@@ -33,29 +32,32 @@ main::after{
     display: table;
     clear: both;   
 }
-/* Inizio menù in side a sinistra */
+
+
+
+/* Inizio sidebar-top */
 .sidebar{
     height: 100%;
     float: left;
     width: 300px;
     background-color: #000000;
 }
+.sidebar-top{
+    height: calc(100% - 200px);
+    min-height: 400px;
+    background-color: #000000;
+    overflow-y: hidden;
+}
+.logo-sidebar{
+    height: 100px;
+}
 .logo-small{
     width: 180px;
     margin-left: 25px;
 }
-.sidebar-top{
-    height: calc(100% - 100px);
-    min-height: 400px;
-    background-color: #000000;
-}
-.sidebar-bot{
-    height: 100px;
-    background-color: #000000;  
-}
 .icona{
     width: 40px;
-    display: inline-block;
+    
     margin-left: 25px;
     filter: brightness(0%) contrast(0%);
 }
@@ -81,15 +83,26 @@ main::after{
     margin-right: 10px;
     margin-bottom: 25px;
 }
-
 nav{
     margin-left: 25px;
     color: gray;
     line-height: 30px;
     font-size: 14px;
+    overflow-y: hidden;
 }
 nav ul {
     list-style-type: none;
+    overflow: auto;
+    height: 30vh;
+}
+/* Fine sidebar-top */
+
+
+
+/* Inizio sidebar-bot */
+.sidebar-bot{
+    height: 100px;
+    background-color: #000000;  
 }
 .freccia-installa{
     color: grey;
@@ -119,7 +132,16 @@ nav ul {
     border-radius: 50%;
     margin-left: 25px;
 }
-/* Fine menù in side a sinistra */
+.testo-profilo{
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 30px;
+    margin-left: 5px;
+}
+/* Fine sidebar-bot */
+
 
 
 /* Inizio contenitore-main */
