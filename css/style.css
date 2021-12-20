@@ -83,13 +83,11 @@ nav ul {
 }
 .freccia-installa{
     color: grey;
-    margin-left: 25px;
     margin-right: 5px;
 }
 .testo-installa{
     color: gray;
     display: inline-block;
-    
 }
 .bottom-side a{
     text-decoration: none;
@@ -97,6 +95,11 @@ nav ul {
     border-bottom-style: solid ;
     border-color: gray;
     border-width: 1px;
+    padding-bottom: 10px;
+}
+.prova{
+    width: 80%;
+    margin: 0 25px;
 }
 /* Fine menù in side a sinistra */
 
