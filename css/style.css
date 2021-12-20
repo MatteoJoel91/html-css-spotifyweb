@@ -18,6 +18,19 @@ body{
 .direzione-riga{
     flex-direction: row;
 }
+.flex-center{
+    align-items: center;
+    justify-content: center;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+.flex-start{
+    align-content: flex-start;
+}
+.flex-end{
+    align-content: flex-end;
+}
 /* Fine regole generali */
 
 
@@ -44,7 +57,7 @@ main::after{
 }
 .sidebar-top{
     height: calc(100% - 200px);
-    min-height: 400px;
+    min-height: 300px;
     background-color: #000000;
     overflow-y: hidden;
 }
@@ -93,7 +106,7 @@ nav{
 nav ul {
     list-style-type: none;
     overflow: auto;
-    height: 30vh;
+    height: 26vh;
 }
 /* Fine sidebar-top */
 
@@ -111,6 +124,7 @@ nav ul {
 .testo-installa{
     color: gray;
     display: inline-block;
+    font-size: 15px;
 }
 .sidebar-bot a{
     text-decoration: none;
@@ -120,6 +134,7 @@ nav ul {
     border-width: 1px;
     padding-bottom: 10px;
     margin-bottom: 10px;
+    margin-top: 5px;
 }
 .btn-installa{
     width: 80%;
@@ -175,5 +190,66 @@ footer{
     height: 100px;
     position: relative;
     background-color: #282828;
+    justify-content: space-between;
+}
+.img-brano{
+    width: 60px;
+    margin-left: 25px;
+    margin-right: 15px;
+}
+.info-brano{
+    margin-right: 40px;
+}
+.nome-artista{
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+.nome-brano{
+    color: gray;
+    font-size: 12px;
+}
+.font-footer{
+    color: gray;
+}
+.margin-fold{
+    margin-right: 10px;
+}
+.font-play{
+    color: white;
+    margin-right: 40px;
+    font-size: 18px;
+    align-self: center;
+}
+.fa-redo-alt{
+    margin-right: 0;
+}
+.fa-play-circle{
+    font-size: 30px;
+}
+.margine-play{
+    margin: 15px 0px;
+}
+.player{
+    color: white;
+    font-size: 12px;
+    margin: 5px;
+}
+.barra{
+    height: 5px;
+    width: 35vw;
+    border-radius: 5px;
+    background-color: gray;
+}
+.font-volume{
+    color: white;
+    margin-right: 15px;
+    font-size: 13px;
+}
+.barra-volume{
+    height: 4px;
+    width: 8vw;
+    border-radius: 5px;
+    background-color: gray;
 }
 /* Fine footer */
