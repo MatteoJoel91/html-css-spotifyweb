@@ -366,27 +366,68 @@ footer{
     margin: 5px;
 }
 .barra{
-    height: 5px;
+    height: 6px;
     width: 35vw;
     border-radius: 5px;
+    cursor: pointer;
     background-color: gray;
+    
+}
+.barra-verde{
+    height: 6px;
+    width: 10vw;
+    border-radius: 5px;
+    background-color: white;
+    position: relative;
+    padding: 2px 0px;
+}
+.pallino-barra{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #94dd25;
+    position: absolute;
+    bottom: -5px;
+    left: 9.5vw;
+    display: none;
+}
+.barra-volume{
+    height: 6px;
+    width: 8vw;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: gray;   
+}
+.barra-verde-volume{
+    height: 6px;
+    width: 3vw;
+    border-radius: 5px;
+    background-color: white;
+    position: relative;
+    padding: 2px 0px;
+}
+.pallino-barra-volume{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #94dd25;
+    position: absolute;
+    bottom: -5px;
+    left: 2.5vw;
+    display: none;
 }
 .font-volume{
     color: white;
     margin-right: 15px;
     font-size: 13px;
 }
-.barra-volume{
-    height: 4px;
-    width: 8vw;
-    border-radius: 5px;
-    background-color: gray;
-}
+
 /* Fine footer */
 
 
 
 /* Regole di hover */
+/* Inizio effetti hover della sidebar */
 .lista-tasti-menu ul li:hover{
     filter: brightness(500%);
 }
@@ -405,12 +446,19 @@ footer{
 .sidebar-bot a:hover .testo-installa{
     color: white;
 }
+/* Fine effetti hover della sidebar */
+
+/* Inizio effetti hover del main */
+.contenitore-nav-album-list a:hover{
+    color: white;
+}
 .hover-album{
     position: relative;
     width: 100%;
 }
 .hover-album:hover img {
     opacity: 0.3;
+    cursor: pointer;
 }
 .play-center {
     transition: .7s ease;
@@ -426,5 +474,35 @@ footer{
 .play-button{
     color: white;
     font-size: 5vw;
+    cursor: pointer;
 }
+/* Fine effetti hover del main */
 
+/* Inizio effetti hover del footer */
+.nome-brano:hover{
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.icon-footer-hover:hover{
+    color: white;
+    cursor: pointer;
+}
+.fa-play-circle:hover{
+    transform: scale(1.1);
+}
+.barra-verde:hover{
+    background-color: #94dd25;
+    cursor: pointer;
+}
+.barra-verde:hover .pallino-barra{
+    display: block;
+}
+.barra-verde-volume:hover{
+    background-color: #94dd25;
+    cursor: pointer;
+}
+.barra-verde-volume:hover .pallino-barra-volume{
+    display: block;
+}
+/* Fine effetti hover del footer */
