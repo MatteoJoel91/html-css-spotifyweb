@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: ;
 }
 body{
     width: 100%;
@@ -197,9 +196,10 @@ main::after{
 .contenitore-main .upgrade-bar a:hover {
     font-size: 17px;
 }
-.contenitore-nav-album{
+.contenitore-nav-album ul{
     padding-top: 120px;
     position: relative;
+    justify-content: center;
 }
 .contenitore-nav-album .contenitore-nav-album-list li a.bordino-verde::after{
     content: '';
