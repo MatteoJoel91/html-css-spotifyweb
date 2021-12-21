@@ -58,7 +58,7 @@ main::after{
 .sidebar{
     height: 100%;
     float: left;
-    width: 300px;
+    width: 250px;
     background-color: #000000;
 }
 .sidebar-top{
@@ -70,9 +70,14 @@ main::after{
 .logo-sidebar{
     height: 100px;
 }
-.logo-small{
+.logo{
     width: 180px;
     margin-left: 25px;
+}
+.logo-small{
+    width: 35px;
+    display: none;
+    margin-left: 13px;
 }
 .lista-tasti-menu{
     margin-left: 25px;
@@ -82,10 +87,10 @@ main::after{
     
 }
 .point{
-    width: 36%;
+    width: 45%;
 }
 .point2{
-    width: 60%;
+    width: 75%;
 }
 .sidebar .lista-tasti-menu ul li .testo-side{
    display: inline-block;
@@ -117,6 +122,12 @@ main::after{
     margin-bottom: 25px;
 }
 .testo-side{
+    color: grey;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 40px;
+}
+.testo-side1{
     color: grey;
     display: inline-block;
     vertical-align: top;
@@ -205,12 +216,12 @@ main::after{
     overflow: auto;
     float: left;
     height: 100%;
-    width: calc(100% - 300px);
+    width: calc(100% - 250px);
     
 }
 .upgrade-bar{
     height: 100px;
-    width: calc(100vw - 300px);
+    width: calc(100vw - 250px);
     background-color: rgba(00, 00, 00, 0.6);
     position: fixed;
     top: 0;
@@ -227,7 +238,7 @@ main::after{
     color: white;
     font-size: 13px;
     margin-right: 45px;
-    transition: 0.5s ease;
+    transition: 0.7s ease;
 }
 .contenitore-main .upgrade-bar a:hover {
     font-size: 16px;
@@ -506,3 +517,99 @@ footer{
     display: block;
 }
 /* Fine effetti hover del footer */
+/* Fine regole di hover */
+
+
+
+/* Inizio regole responsive */
+@media (max-width: 1200px){
+    .contenitore-album {
+        width: calc(100% / 5 - 20px);  
+        text-align: center;
+        margin: 10px 10px;
+    }
+}
+@media (max-width: 992px){
+    .contenitore-album {
+        width: calc(100% / 4 - 20px);  
+        text-align: center;
+        margin: 10px 10px;
+    }
+}
+@media (max-width: 768px){
+    .contenitore-album {
+        width: calc(100% / 3 - 20px);  
+        text-align: center;
+        margin: 10px 10px;
+    }
+}
+@media (max-width: 576px){
+    .contenitore-album {
+        width: calc(100% / 2 - 20px);  
+        text-align: center;
+        margin: 10px 10px;
+    }
+}
+@media (max-width: 575px) and (min-width: 370px){
+    .contenitore-album {
+        width: calc(100% / 2 - 20px);  
+        text-align: center;
+        margin: 10px 10px;
+    }
+    .sidebar{
+        width: 60px;
+    }
+    .logo{
+    display: none;
+    }
+    .logo-small{
+    display: block;
+    }
+    .logo-sidebar{
+        height: 50px;
+    }
+    .play-add{
+        display: none;
+    }
+    .lista-play-side{
+        display: none;
+    }
+    .lista-tasti-menu ul .point2 a .testo-side{
+        display: none;
+    }
+    .testo-side1{
+        display: none;
+    }
+    .testo-side2{
+        display: none;
+    }
+    .lista-tasti-menu{
+        margin: 10px 10px;
+    }
+    .testo-installa{
+        display: none;
+    }
+    .sidebar-bot a{
+        border-bottom-style: none;
+    }
+    .btn-installa{
+        margin: 10px 22px;
+    }
+    .testo-profilo{
+        display: none;
+    }
+    .icona-profilo{
+        margin-left: 17px;
+    }
+    .contenitore-main{
+        width: calc(100% - 60px); 
+    }
+    .upgrade-bar{
+        width: calc(100% - 60px);
+    }
+    .contenitore-album img{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
