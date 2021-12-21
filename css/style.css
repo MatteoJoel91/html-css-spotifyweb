@@ -3,11 +3,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: ;
 }
 body{
     width: 100%;
     height: 100vh;
+    font-family: 'Montserrat', sans-serif;
 }
 .flex{
     display: flex;
@@ -30,6 +31,9 @@ body{
 }
 .flex-end{
     align-content: flex-end;
+}
+span{
+    display: block;
 }
 /* Fine regole generali */
 
@@ -70,7 +74,6 @@ main::after{
 }
 .icona{
     width: 40px;
-    
     margin-left: 25px;
     filter: brightness(0%) contrast(0%);
 }
@@ -98,10 +101,13 @@ main::after{
 }
 .sidebar nav{
     margin-left: 25px;
-    color: gray;
     line-height: 30px;
     font-size: 14px;
     overflow-y: hidden;
+}
+.sidebar nav ul li a{
+    text-decoration: none;
+    color: gray;
 }
 .sidebar nav ul {
     list-style-type: none;
@@ -169,14 +175,41 @@ main::after{
 }
 .upgrade-bar{
     height: 100px;
-    width: calc(100% - 300px);
+    width: calc(100vw - 300px);
     background-color: rgba(00, 00, 00, 0.6);
     position: fixed;
     top: 0;
     right: 0;
+    z-index: 999;
+    text-align: right;
+    line-height: 100px;
+}
+.btn-upgrade{
+    border: solid 1px white;
+    border-radius: 20px;
+    padding: 15px 40px;
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    margin-right: 45px;
+    transition: 0.6s ease;
+}
+.contenitore-main .upgrade-bar a:hover {
+    font-size: 17px;
 }
 .contenitore-nav-album{
     padding-top: 120px;
+    position: relative;
+}
+.contenitore-nav-album .contenitore-nav-album-list li a.bordino-verde::after{
+    content: '';
+    height: 2px;
+    width: 40px;
+    background-color: #94dd25;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .contenitore-nav-album ul li{
     line-height: 50px;
@@ -188,7 +221,6 @@ main::after{
     color: gray;
     font-size: 12px;
     font-weight: bold;
-    
 }
 .album-recenti{
     margin-left: 15px;
@@ -211,7 +243,6 @@ main::after{
     width: 100%;
     margin-bottom: 15px;
 }
-
 .info-album{
     align-self: center;
 }
@@ -232,6 +263,10 @@ main::after{
     font-weight: bold;
     margin: 15px 25px;
 }
+.img-radius{
+    border-radius: 50%;
+}
+
 /* Fine contenitore-main */
 
 /* Fine main */
@@ -241,7 +276,9 @@ main::after{
 /* Inizio footer */
 footer{
     height: 100px;
-    position: relative;
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
     background-color: #282828;
     justify-content: space-between;
     overflow: hidden;
@@ -307,3 +344,30 @@ footer{
     background-color: gray;
 }
 /* Fine footer */
+
+
+
+/* Regole di hover */
+.hover-album{
+    position: relative;
+    width: 100%;
+}
+.hover-album:hover img {
+    opacity: 0.3;
+}
+.play-center {
+    transition: .7s ease;
+    opacity: 0;
+    position: absolute;
+    top: 45%;
+    left: 51%;
+    transform: translate(-50%, -50%);   
+}
+.hover-album:hover .play-center {
+    opacity: 1;
+}
+.play-button{
+    color: white;
+    font-size: 5vw;
+}
+
