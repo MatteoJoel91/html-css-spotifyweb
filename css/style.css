@@ -74,9 +74,47 @@ main::after{
     width: 180px;
     margin-left: 25px;
 }
-.icona{
-    width: 40px;
+.lista-tasti-menu{
     margin-left: 25px;
+}
+.lista-tasti-menu ul li{
+    padding: 5px 0px;
+    
+}
+.point{
+    width: 36%;
+}
+.point2{
+    width: 60%;
+}
+.sidebar .lista-tasti-menu ul li .testo-side{
+   display: inline-block;
+   vertical-align: top;
+   line-height: 40px;
+}
+.sidebar .lista-tasti-menu ul li a img{
+    width: 40px;
+}
+.img-icone{
+    filter: brightness(50%);
+}
+.testo-side2{
+    color: white;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 40px;
+}
+.sidebar .lista-tasti-menu ul li a{
+    text-decoration: none;
+}
+.icona-playlist{
+    color: black;
+    font-size: 20px;
+    padding: 10px;
+    background-color: gray;
+    margin-left: 25px;
+    margin-right: 10px;
+    margin-bottom: 25px;
 }
 .testo-side{
     color: grey;
@@ -91,29 +129,25 @@ main::after{
     margin-top: 30px;
     margin-bottom: 10px;
 }
-.icona-playlist{
-    color: black;
-    font-size: 20px;
-    padding: 10px;
-    background-color: gray;
-    margin-left: 25px;
-    margin-right: 10px;
-    margin-bottom: 25px;
+.play-add a{
+    text-decoration: none;
+    padding: 10px 0px;
 }
-.sidebar nav{
+.sidebar .lista-play-side{
     margin-left: 25px;
     line-height: 30px;
     font-size: 14px;
     overflow-y: hidden;
 }
-.sidebar nav ul li a{
+.sidebar .lista-play-side ul li a{
     text-decoration: none;
     color: gray;
+    padding: 5px 0px;
 }
-.sidebar nav ul {
+.sidebar .lista-play-side ul {
     list-style-type: none;
     overflow: auto;
-    height: 26vh;
+    height: 24vh;
 }
 /* Fine sidebar-top */
 
@@ -353,7 +387,22 @@ footer{
 
 
 /* Regole di hover */
-.hover-icona-testo-sidebar:hover{
+.lista-tasti-menu ul li:hover{
+    filter: brightness(500%);
+}
+.play-add a:hover .testo-side{
+    color: white;
+}
+.play-add a:hover .icona-playlist{
+    background-color: white;
+}
+.lista-play-side ul li a:hover{
+    color: white;
+}
+.sidebar-bot a:hover .freccia-installa{
+    color: white;
+}
+.sidebar-bot a:hover .testo-installa{
     color: white;
 }
 .hover-album{
