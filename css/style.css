@@ -285,7 +285,7 @@ main::after{
     margin-left: 25px;
 }
 .contenitore-album {
-    width: calc(100% / 6);  
+    width: calc(100% / 6 - 20px);  
     text-align: center;
     margin: 10px 10px;
 }
