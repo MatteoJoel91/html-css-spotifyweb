@@ -526,14 +526,14 @@ footer{
 
 
 /* Inizio regole responsive */
-@media (max-width: 1200px){
+@media (max-width: 1080px){
     .contenitore-album {
         width: calc(100% / 5 - 20px);  
         text-align: center;
         margin: 10px 10px;
     }
 }
-@media (max-width: 992px){
+@media (max-width: 920px){
     .contenitore-album {
         width: calc(100% / 4 - 20px);  
         text-align: center;
@@ -546,14 +546,17 @@ footer{
         text-align: center;
         margin: 10px 10px;
     }
-    .img-brano{
-        display: none;
-    }
     .footer-sinistra{
         margin-left: 10px;
     }
+    .barra-volume{
+        width: 15vw;
+    }
+    .img-brano, footer .fa-heart, footer .fa-folder, footer .fa-list-ul, footer .fa-desktop{
+        display: none;
+    }
 }
-@media (max-width: 576px){
+@media (max-width: 625px){
     .contenitore-album {
         width: calc(100% / 2 - 20px);  
         text-align: center;
@@ -578,50 +581,28 @@ footer{
     .sidebar-top{
         height: calc(100% - 150px);
     }
-    .logo{
-    display: none;
+    .logo, .play-add, .lista-play-side, .lista-tasti-menu ul .point2 a .testo-side,
+    .bordo-home, .testo-side1, .testo-side2, .testo-installa, .testo-profilo, 
+    .footer-sinistra, .footer-destra{
+        display: none;
     }
     .logo-small{
-    display: block;
+        display: block;
     }
     .logo-sidebar{
         height: 50px;
     }
-    .play-add{
-        display: none;
-    }
-    .lista-play-side{
-        display: none;
-    }
-    .lista-tasti-menu ul .point2 a .testo-side{
-        display: none;
-    }
-    .bordo-home{
-        border: none;
-    }
     .margine-left-25px{
         margin-left: 0px;
     }
-    .testo-side1{
-        display: none;
-    }
-    .testo-side2{
-        display: none;
-    }
     .lista-tasti-menu{
         margin: 10px 10px;
-    }
-    .testo-installa{
-        display: none;
     }
     .sidebar-bot a{
         border-bottom-style: none;
     }
     .btn-installa{
         margin: 10px 22px;
-    }
-    .testo-profilo{
-        display: none;
     }
     .icona-profilo{
         margin-left: 17px;
@@ -639,14 +620,8 @@ footer{
     .barra{
         width: 70vw;
     }
-    .footer-sinistra{
-        display: none;
-    }
     footer{
         justify-content: center;
-    }
-    .footer-destra{
-        display: none;
-    }
+    }  
 }
 
