@@ -79,18 +79,22 @@ main::after{
     display: none;
     margin-left: 13px;
 }
-.lista-tasti-menu{
+.margine-left-25px{
     margin-left: 25px;
 }
+.bordo-home{
+    border-left: 2px solid #94dd25;
+}
 .lista-tasti-menu ul li{
-    padding: 5px 0px;
-    
+    padding: 5px 0px; 
 }
 .point{
-    width: 45%;
+    width: 55%;
+    height: 50px;
 }
 .point2{
     width: 75%;
+    height: 50px;
 }
 .sidebar .lista-tasti-menu ul li .testo-side{
    display: inline-block;
@@ -243,13 +247,13 @@ main::after{
 .contenitore-main .upgrade-bar a:hover {
     font-size: 16px;
 }
+
 .contenitore-nav-album ul{
     padding-top: 120px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-
 .contenitore-nav-album .contenitore-nav-album-list li a.bordino-verde::after{
     content: '';
     height: 2px;
@@ -542,12 +546,24 @@ footer{
         text-align: center;
         margin: 10px 10px;
     }
+    .img-brano{
+        display: none;
+    }
+    .footer-sinistra{
+        margin-left: 10px;
+    }
 }
 @media (max-width: 576px){
     .contenitore-album {
         width: calc(100% / 2 - 20px);  
         text-align: center;
         margin: 10px 10px;
+    }
+    .img-brano{
+        display: none;
+    }
+    .footer-sinistra{
+        margin-left: 10px;
     }
 }
 @media (max-width: 575px) and (min-width: 370px){
@@ -558,6 +574,9 @@ footer{
     }
     .sidebar{
         width: 60px;
+    }
+    .sidebar-top{
+        height: calc(100% - 150px);
     }
     .logo{
     display: none;
@@ -576,6 +595,12 @@ footer{
     }
     .lista-tasti-menu ul .point2 a .testo-side{
         display: none;
+    }
+    .bordo-home{
+        border: none;
+    }
+    .margine-left-25px{
+        margin-left: 0px;
     }
     .testo-side1{
         display: none;
@@ -610,6 +635,18 @@ footer{
     .contenitore-album img{
         width: 100%;
         margin-bottom: 15px;
+    }
+    .barra{
+        width: 70vw;
+    }
+    .footer-sinistra{
+        display: none;
+    }
+    footer{
+        justify-content: center;
+    }
+    .footer-destra{
+        display: none;
     }
 }
 

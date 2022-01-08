@@ -9,7 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title> Spotify</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
 </head>
 <body>
     <!-- Inizio main -->
@@ -23,17 +24,17 @@
             <div class="sidebar-top flex direzione-colonna">
                 <nav class="lista-tasti-menu">
                     <ul>
-                        <li class="point">
-                            <a href="#"><img src="img/home.svg" alt="icona-home">
+                        <li class="point bordo-home">
+                            <a href="#"><img class="margine-left-25px" src="img/home.svg" alt="icona-home">
                                 <span class="testo-side2">Home</span>
                             </a>
-                        </li>
-                        <li class="point">
+                        </li>                     
+                        <li class="point margine-left-25px">
                             <a href="#"><img class="img-icone" src="img/search.svg" alt="icona-cerca">
                                 <span class="testo-side1">Cerca</span>
                             </a>
                         </li>
-                        <li class="point2">
+                        <li class="point2 margine-left-25px">
                             <a href="#"><img class="img-icone" src="img/libreria.svg" alt="icona-libreria">
                                 <span class="testo-side">La tua Libreria</span>
                             </a>
@@ -211,7 +212,7 @@
 
     <!-- Inizio footer -->
     <footer class="flex">
-        <div class="flex flex-center">
+        <div class="flex flex-center footer-sinistra">
             <img class="img-brano" src="img/sinister.jpeg" alt="img brano">
             <div class="info-brano">
                 <span class="nome-artista">Sinister</span>
@@ -231,7 +232,7 @@
                 <i class="fas fa-redo-alt font-play icon-footer-hover"></i>
             </div>
 
-            <div class="flex margine-play flex-center">
+            <div class="flex margine-play flex-center footer-centro">
                 <span class="player">0:25</span>
                 <div class="barra">
                     <div class="barra-verde">
@@ -243,7 +244,7 @@
                 <span class="player">4:35</span>
             </div>
         </div>
-        <div class="flex flex-center font-volume">
+        <div class="flex flex-center font-volume footer-destra">
             <i class="fas fa-list-ul margin-fold icon-footer-hover"></i>
             <i class="fas fa-desktop margin-fold icon-footer-hover"></i>
             <i class="fas fa-volume-up margin-fold icon-footer-hover"></i>
