@@ -16,11 +16,15 @@
     <!-- Inizio main -->
     <main>
         <!-- Inizio menù in side a sinistra -->
+        <!-- Logo Spotify -->
         <section class="sidebar">
             <div class="logo-sidebar flex">
-                <img class="logo-small" src="img/logo-small.svg" alt="">
-                <img class="logo pointer" src="img/logo.svg" alt="">
+                <img class="logo-small" src="img/logo-small.svg" alt="logo">
+                <img class="logo pointer" src="img/logo.svg" alt="logo">
             </div>
+
+
+            <!-- Tasti Home - Cerca - Libreria -->
             <div class="sidebar-top flex direzione-colonna">
                 <nav class="lista-tasti-menu">
                     <ul>
@@ -41,6 +45,9 @@
                         </li>
                     </ul>
                 </nav>
+
+
+                <!-- Sezione Playlist -->
                 <div class="play-add">
                     <span class="testo-play">PLAYLIST</span>
                     <a href="#"><i class="fas fa-plus icona-playlist"></i>
@@ -59,6 +66,8 @@
                  </nav>
             </div> 
 
+
+            <!-- Installa App -->
             <div class="sidebar-bot">
                 <a class="btn-installa" href="#">
                     <i class="far fa-arrow-alt-circle-down freccia-installa"></i>
@@ -69,11 +78,18 @@
             </div>
         </section>
         <!--Fine menù in side a sinistra -->
+
+
+        <!-- Inizio contenitore main principale -->
         <section class="contenitore-main">
+
+            <!-- Bottone Upgrade -->
             <div class="upgrade-bar">
                     <a href="#" class="btn-upgrade">EFFETTUA L'UPGRADE</a>
             </div>
 
+
+                <!-- Menu sezione main -->
                 <nav class="contenitore-nav-album ">
                     <ul class="contenitore-nav-album-list">
                         <li><a href="#" class="bordino-verde">IN EVIDENZA</a></li>  
@@ -85,8 +101,9 @@
                     </ul>
                 </nav>
 
-            <p class="testo-played">Recently played</p>
 
+            <!-- Inizio dei box "Recently played"-->
+            <span class="testo-played">Recently played</span>
             <div class="album-recenti flex wrap ">
                     <div class="contenitore-album ">
                         <div class="hover-album">
@@ -154,7 +171,10 @@
                             <span class="artista">Subtitle</span>
                     </div>
             </div>
+            <!-- Fine dei box "Recently played"-->
 
+
+            <!-- Inizio dei box "Creato per John Doe"-->
             <span class="testo-played">Creato per John Doe</span>
             <span class="testo-played2">Più ascolti, più accurati saranno i suggerimenti</span>
 
@@ -179,8 +199,10 @@
                         <span class="genere">Daily mix 1</span>
                 </div>
             </div>
+            <!-- Fine dei box "Creato per John Doe"-->
 
 
+            <!-- Inizio dei box "Artisti più popolari"-->
             <span class="testo-played">Artisti più popolari</span>
             <span class="testo-played2">Più ascolti, più accurati saranno i suggerimenti</span>
 
@@ -205,13 +227,16 @@
                         <span class="genere">Ludovio Einaudi</span>
                 </div>
             </div>
+            <!-- Fine dei box "Artisti più popolari"-->
         </section>
+        <!-- Fine contenitore main principale -->
     </main>
-
+    <!-- Fine main -->
 
 
     <!-- Inizio footer -->
     <footer class="flex">
+        <!-- Inizio footer parte sinistra -->
         <div class="flex flex-center footer-sinistra">
             <img class="img-brano" src="img/sinister.jpeg" alt="img brano">
             <div class="info-brano">
@@ -223,6 +248,10 @@
                 <i class="far fa-folder icon-footer-hover"></i>
             </div>
         </div>
+        <!-- Fine footer parte sinistra -->
+
+
+        <!-- Inizio footer parte centrale -->
         <div>
             <div class="flex margine-play flex-center">
                 <i class="fas fa-random font-play icon-footer-hover"></i>
@@ -244,6 +273,10 @@
                 <span class="player">4:35</span>
             </div>
         </div>
+        <!-- Fine footer parte centrale -->
+
+
+        <!-- Inizio footer parte destra -->
         <div class="flex flex-center font-volume footer-destra">
             <i class="fas fa-list-ul margin-fold icon-footer-hover"></i>
             <i class="fas fa-desktop margin-fold icon-footer-hover"></i>
@@ -256,8 +289,8 @@
                 </div> 
             </div>
         </div>
+        <!-- Fine footer parte destra -->
     </footer>
-    <!-- Fine footer -->
-    
+    <!-- Fine footer -->  
 </body>
 </html>

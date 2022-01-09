@@ -220,8 +220,7 @@ main::after{
     overflow: auto;
     float: left;
     height: 100%;
-    width: calc(100% - 250px);
-    
+    width: calc(100% - 250px);  
 }
 .upgrade-bar{
     height: 100px;
@@ -247,7 +246,6 @@ main::after{
 .contenitore-main .upgrade-bar a:hover {
     font-size: 16px;
 }
-
 .contenitore-nav-album ul{
     padding-top: 120px;
     display: flex;
@@ -320,7 +318,6 @@ main::after{
 .img-radius{
     border-radius: 50%;
 }
-
 /* Fine contenitore-main */
 
 /* Fine main */
@@ -386,7 +383,6 @@ footer{
     border-radius: 5px;
     cursor: pointer;
     background-color: gray;
-    
 }
 .barra-verde{
     height: 6px;
@@ -436,7 +432,6 @@ footer{
     margin-right: 15px;
     font-size: 13px;
 }
-
 /* Fine footer */
 
 
@@ -624,4 +619,4 @@ footer{
         justify-content: center;
     }  
 }
-
+/* Fine regole responsive */
