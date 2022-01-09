@@ -527,12 +527,18 @@ footer{
         text-align: center;
         margin: 10px 10px;
     }
+    .play-button{
+        font-size: 6vw;
+    }
 }
 @media (max-width: 920px){
     .contenitore-album {
         width: calc(100% / 4 - 20px);  
         text-align: center;
         margin: 10px 10px;
+    }
+    .play-button{
+        font-size: 7vw;
     }
 }
 @media (max-width: 768px){
@@ -550,6 +556,9 @@ footer{
     .img-brano, footer .fa-heart, footer .fa-folder, footer .fa-list-ul, footer .fa-desktop{
         display: none;
     }
+    .play-button{
+        font-size: 8vw;
+    }
 }
 @media (max-width: 625px){
     .contenitore-album {
@@ -559,6 +568,9 @@ footer{
     }
     .img-brano{
         display: none;
+    }
+    .play-button{
+        font-size: 10vw;
     }
     .footer-sinistra{
         margin-left: 10px;
